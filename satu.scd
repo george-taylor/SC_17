@@ -9,14 +9,21 @@ x = { SinOsc.ar(68, 0, 0.05) }.play;   // 17 * 4
 
 x = { SinOsc.ar(136, 0, 0.05) }.play;  // 17 * 8
 
+(
 x = { SinOsc.ar(272, 0, 0.05) }.play;  // 17 * 16
-
+x = { SinOsc.ar(408, 0, 0.05) }.play;  // 17 * 24
 x = { SinOsc.ar(544, 0, 0.05) }.play;  // 17 * 32 
+x = { SinOsc.ar(816, 0, 0.05) }.play;  // 17 * 48 
+)
 
+(
 x = { SinOsc.ar(952, 0, 0.05) }.play;  // 14 * 17 * 4
 x = { SinOsc.ar(1088, 0, 0.05) }.play; // 16 * 17 * 4
 x = { SinOsc.ar(1156, 0, 0.05) }.play; // 17 * 17 * 4
+)
 
+(
 x = { SinOsc.ar(1904, 0, 0.05) }.play;
 x = { SinOsc.ar(2176, 0, 0.05) }.play;
 x = { SinOsc.ar(2312, 0, 0.05) }.play;
+)
