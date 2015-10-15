@@ -22,8 +22,8 @@ SynthDef.new("SC_17_SinOsc", { arg base = 17, harm = 1, mul = 0.1, out = [0,1];
 
 a = Synth("SC_17_SinOsc", [\harm, 4, \out, 0]);   
 b = Synth("SC_17_SinOsc", [\harm, 7, \out, 1]);   
-c = Synth(\SC_17_SinOsc, [\harm, 8, \out, 0]);   
-d = Synth(\SC_17_SinOsc, [\harm, 9, \out, 1]);   
+c = Synth.new(\SC_17_SinOsc, [\harm, 8, \out, 0]);   
+d = Synth.new(\SC_17_SinOsc, [\harm, 9, \out, 1]);   
 
 e = Synth("SC_17_SinOsc", ["harm", 11, \out, 0]);   
 f = Synth("SC_17_SinOsc", ["harm", 13, \out, 1]);   
