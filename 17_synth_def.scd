@@ -34,8 +34,11 @@ p = Synth(\SC_17_SinOsc, [\harm, 27, \out, 1]);  
 
 q = Synth(\SC_17_SinOsc, [\harm, 28, \out, 0]);   
 r = Synth(\SC_17_SinOsc, [\harm, 29, \out, 1]);   
+Synth(\SC_17_SinOsc, [\harm, 31, \out, 0]);   
 s = Synth(\SC_17_SinOsc, [\harm, 32, \out, 0]);   
+Synth(\SC_17_SinOsc, [\harm, 33, \out, 1]); 
 t = Synth(\SC_17_SinOsc, [\harm, 34, \out, 1]);   
+
 
 Synth(\SC_17_SinOsc, [\harm, 36, \out, 0]);   
 Synth(\SC_17_SinOsc, [\harm, 38, \out, 0]);   
