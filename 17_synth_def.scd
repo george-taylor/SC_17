@@ -3,7 +3,10 @@ s.boot;
 
 (
 SynthDef.new(\SC_17_SinOsc, { arg base = 68, harm = 1, mul = 0.1, out = [0,1]; 
-  Out.ar(out, SinOsc.ar(base*harm, 0, mul)); 
+  //Out.ar(out, SinOsc.ar(base*harm, 0, mul)); 
+  var freqOsc;
+        freqOsc = SinOsc.kr(2.5, 0, 0.1, 0);
+  Out.ar(out, SinOsc.ar(freqOsc + (base*harm), 0, mul)); 
 }).add;
 Synth(\SC_17_SinOsc, [\harm, 1, \out, 0]);   
 Synth(\SC_17_SinOsc, [\harm, 1, \out, 1]);   
