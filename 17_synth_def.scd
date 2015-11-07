@@ -3,7 +3,7 @@ s.boot;
 // SynthDef on single line to allow for redefinition 
 // rate = 2, width = 0.0025
 // rate = 2, width = 0.0025
-SynthDef.new(\SC_17_SinOsc, { arg base = 34, harm = 1, mul = 0.05, out = [0,1], rate = 1/17, width = 0.0017; var freqOsc; freqOsc = SinOsc.kr(rate, 0, width, 0); Out.ar(out, SinOsc.ar( (freqOsc*base*harm) + (base*harm), 0, mul)); }).add;
+SynthDef.new(\SC_17_SinOsc, { arg base = 34, harm = 1, mul = 0.05, out = [0,1], rate = 17, width = 0.0017; var freqOsc; freqOsc = SinOsc.kr(rate, 0, width, 0); Out.ar(out, SinOsc.ar( (freqOsc*base*harm) + (base*harm), 0, mul)); }).add;
 
 Synth(\SC_17_SinOsc, [\harm, 1, \out, 0]);   
 Synth(\SC_17_SinOsc, [\harm, 1, \out, 1]);   
