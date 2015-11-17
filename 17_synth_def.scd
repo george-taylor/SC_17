@@ -3,7 +3,8 @@ s.boot;
 // SynthDef on single line to allow for redefinition 
 // rate = 2, width = 0.0025
 // rate = 2, width = 0.0025
-SynthDef.new(\SC_17_SinOsc, { arg base = 34, harm = 1, mul = 0.05, out = [0,1], rate = 17, width = 0.0017; var freqOsc; freqOsc = SinOsc.kr(rate, 0, width, 0); Out.ar(out, SinOsc.ar( (freqOsc*base*harm) + (base*harm), 0, mul)); }).add;
+// SynthDef.new(\SC_17_SinOsc, { arg base = 34, harm = 1, mul = 0.05, out = [0,1], rate = 17, width = 0.0017; var freqOsc; freqOsc = SinOsc.kr(rate, 0, width, 0); Out.ar(out, SinOsc.ar( (freqOsc*base*harm) + (base*harm), 0, mul)); }).add;
+SynthDef.new(\SC_17_SinOsc, { arg base = 34, harm = 1, mul = 0.05, out = [0,1], phase = 0, rate = 17, width = 0.0017; var freqOsc; freqOsc = SinOsc.kr(rate, 0, width, 0); Out.ar(out, SinOsc.ar( (freqOsc*base*harm) + (base*harm), phase, mul)); }).add;
 
 Synth(\SC_17_SinOsc, [\harm, 1, \out, 0]);   
 Synth(\SC_17_SinOsc, [\harm, 1, \out, 1]);   
@@ -18,7 +19,7 @@ Synth(\SC_17_SinOsc, [\harm, 6, \out, 1]);  
 Synth(\SC_17_SinOsc, [\harm, 7, \out, 0]);   
 Synth(\SC_17_SinOsc, [\harm, 7, \out, 1]);   
 Synth(\SC_17_SinOsc, [\harm, 8, \out, 0]);   
-Synth(\SC_17_SinOsc, [\harm, 8, \out, 1]);   
+Synth(\SC_17_SinOsc, [\harm, 8, \out, 1]); 
 
 /*
 Synth.new(\SC_17_SinOsc, [\harm, 9, \out, 1]);   
@@ -50,6 +51,8 @@ Synth(\SC_17_SinOsc, [\harm, 34, \out, 0]);  
 Synth(\SC_17_SinOsc, [\harm, 34, \out, 1]);   
 Synth(\SC_17_SinOsc, [\harm, 48, \out, 0]);   
 Synth(\SC_17_SinOsc, [\harm, 48, \out, 1]);   
+Synth(\SC_17_SinOsc, [\harm, 51, \out, 0]);   
+Synth(\SC_17_SinOsc, [\harm, 51, \out, 1]);   
 Synth(\SC_17_SinOsc, [\harm, 56, \out, 0]);   
 Synth(\SC_17_SinOsc, [\harm, 56, \out, 1]);   
 Synth(\SC_17_SinOsc, [\harm, 58, \out, 0]);   
