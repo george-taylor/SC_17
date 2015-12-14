@@ -72,6 +72,7 @@ Synth(\SC_17_SinOsc, [\harm, 128, \out, 0]);  
 Synth(\SC_17_SinOsc, [\harm, 128, \out, 1]);   
 Synth(\SC_17_SinOsc, [\harm, 136, \out, 0]);   
 Synth(\SC_17_SinOsc, [\harm, 136, \out, 1]);   
+
 /*
 Synth(\SC_17_SinOsc, [\harm, 48, \out, 1]);   
 Synth(\SC_17_SinOsc, [\harm, 56, \out, 0]);   
